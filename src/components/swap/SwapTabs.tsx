@@ -16,7 +16,7 @@ const TABS: { id: TabId; label: string; icon: typeof Calendar }[] = [
 
 export default function SwapTabs({ activeTab, onTabChange, pendingCount }: SwapTabsProps) {
   return (
-    <div className="bg-white border-b border-gray-200">
+    <div className="bg-white border-b border-gray-100">
       <div className="max-w-4xl mx-auto px-4">
         <nav className="flex gap-1">
           {TABS.map((tab) => {

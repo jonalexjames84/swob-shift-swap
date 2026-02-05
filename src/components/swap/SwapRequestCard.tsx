@@ -29,7 +29,7 @@ export default function SwapRequestCard({
   const isMuted = request.status === 'declined' || request.status === 'cancelled' || request.status === 'completed'
 
   return (
-    <div className={`bg-white rounded-xl border border-gray-200 overflow-hidden ${isMuted ? 'opacity-70' : ''}`}>
+    <div className={`bg-white rounded-xl border border-gray-100 card-shadow overflow-hidden ${isMuted ? 'opacity-70' : ''}`}>
       <div className="p-4">
         {/* Header */}
         <div className="flex items-center justify-between mb-3">

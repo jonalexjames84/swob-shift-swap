@@ -45,7 +45,7 @@ export default function ShiftCard({ shift, variant, onPostForSwap, onRequestSwap
   }
 
   return (
-    <div className={`bg-white rounded-xl border border-gray-200 border-l-4 ${borderColor} overflow-hidden`}>
+    <div className={`bg-white rounded-xl border border-gray-100 card-shadow border-l-4 ${borderColor} overflow-hidden`}>
       <div className="p-4">
         <div className="flex items-start justify-between">
           <div className="flex items-start gap-3">
