@@ -1,11 +1,28 @@
-import { ArrowLeftRight } from 'lucide-react'
+import { ArrowLeftRight, FileText } from 'lucide-react'
 import { RESTAURANT_NAME, CURRENT_USER_ID, getEmployeeById, ROLE_LABELS } from '@/lib/swap-data'
+
+const PRD_URL = 'https://github.com/jonalexjames84/swob-shift-swap/blob/main/PRD.md'
 
 export default function SwapHeader() {
   const user = getEmployeeById(CURRENT_USER_ID)!
 
   return (
-    <header className="bg-white border-b border-gray-200">
+    <header>
+      <div className="bg-gray-900 text-gray-300 text-xs">
+        <div className="max-w-4xl mx-auto px-4 py-2 flex items-center justify-between">
+          <span>Swob Shift Swap — Interactive Prototype</span>
+          <a
+            href={PRD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-blue-400 hover:text-blue-300 transition-colors"
+          >
+            <FileText className="w-3.5 h-3.5" />
+            View PRD
+          </a>
+        </div>
+      </div>
+      <div className="bg-white border-b border-gray-200">
       <div className="max-w-4xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -27,6 +44,7 @@ export default function SwapHeader() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </header>
   )
